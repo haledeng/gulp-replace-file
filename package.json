@@ -1,0 +1,16 @@
+{
+  "name": "gulp-replace-file",
+  "version": "1.0.0",
+  "description": "gulp plugin replace file",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd test && gulp replace"
+  },
+  "author": "helondeng",
+  "license": "MIT",
+  "dependencies": {
+    "css2string": "^1.0.3",
+    "parse-tpl": "^1.0.3",
+    "through2": "^2.0.1"
+  }
+}

@@ -19,6 +19,7 @@ module.exports = function(opts) {
 			var _all = path.join(dirname, name);
 			var _replace = all;
 			if (fs.existsSync(_all)) {
+				// source file content
 				_replace = fs.readFileSync(_all, 'utf-8');
 				if (/\.css$/.test(name)) {
 					// css file
@@ -26,6 +27,8 @@ module.exports = function(opts) {
 				} else if (/\.(html|tpl)$/.test(name)) {
 					// tpl file
 					_replace = transformer.html(_replace);
+				} else if (/\.(png|jpg|jpeg|gif)$/.test(name)) {
+					// @TODO: image file parse base64
 				}
 			}
 			return _replace;

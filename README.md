@@ -1,20 +1,25 @@
 # gulp-replace-file
-将JS文件中引用的模板文件编译成函数，css文件编译成字符串。
+A gulp plugin to parse reference files in JS files. Different files will be parsed into different contents.
++ Template files (with a file extension name `.html` or `.tpl`) => JS functions.
++ Css files => string.
++ Other files => its file content.
 
-### install
+### Install
 ```
 npm i gulp-replace-file
 ```
 
-### JS文件引用
+### Usage
 ```
+// __inline is the key function to reference file, which can be configed in gulpfile.
 var htmlFunc = __inline('./temp.html');
 var htmlStr = htmlFunc(data);
 var cssText = __inline('./test.css');
 ```
 
-### gulp配置
+### Config in gulpfile
 ```
+var replace = require('gulp-replace-file');
 gulp.task('replace', function() {
 	gulp.src('replace/test.js')
 		.pipe(replace())
@@ -23,4 +28,4 @@ gulp.task('replace', function() {
 ```
 
 ### config option
-**prefix**:引用关键字，默认是`__inline`
+**prefix** : The key value to reference file. `__inline` is a default value.

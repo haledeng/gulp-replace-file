@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var replace = require('gulp-replace');
+var replace = require('../');
 
 
 gulp.task('replace', function() {

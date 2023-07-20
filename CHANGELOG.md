@@ -1,5 +1,12 @@
 
 
+## [1.1.3](https://github.com/haledeng/gulp-replace-file/compare/v1.1.2...v1.1.3) (2023-07-20)
+
+
+### 🐛 Bug Fixes
+
+* test demo ([962d3ce](https://github.com/haledeng/gulp-replace-file/-/commit/962d3ce086eb79d392b5fe874e7b2c1a72aa4171))
+
 ## 1.1.2 (2023-07-20)
 
 

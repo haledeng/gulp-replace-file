@@ -4,6 +4,7 @@
   "description": "gulp plugin replace file",
   "main": "index.js",
   "scripts": {
+    "test": "cd test && gulp replace",
     "minor": "release-it --ci minor",
     "patch": "release-it --ci patch",
     "release": "release-it --ci"
@@ -17,6 +18,7 @@
     "through2": "^2.0.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.2",
     "@release-it/conventional-changelog": "^7.0.0",
     "release-it": "^16.1.2"
   }

@@ -9,6 +9,10 @@ on:
   push:
     #分支可以选择多个
     branches: [master]
+  
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:

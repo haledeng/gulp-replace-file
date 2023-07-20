@@ -4,7 +4,9 @@
   "description": "gulp plugin replace file",
   "main": "index.js",
   "scripts": {
-    "test": "cd test && gulp replace"
+    "minor": "release-it --ci minor",
+    "patch": "release-it --ci patch",
+    "release": "release-it --ci"
   },
   "author": "helondeng",
   "license": "MIT",
@@ -13,5 +15,9 @@
     "decomment": "^0.8.6",
     "parse-tpl": "^1.0.3",
     "through2": "^2.0.1"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^7.0.0",
+    "release-it": "^16.1.2"
   }
 }
